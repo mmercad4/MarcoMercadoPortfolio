@@ -118,18 +118,35 @@ nav {
 }
 
 .experience {
-  margin-top: 20rem;
+  margin-top: 25rem;
   margin-bottom: 10rem;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.experience__heading {
-  font-size: 1rem;
+.experience__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10%;
 }
 
 .experience__heading {
   font-size: 3rem;
+  margin-bottom: 10%;
+}
+
+.experience__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 5%;
+}
+
+.experience__date,
+.experience__name,
+.experience__title {
+  font-weight: 300;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
