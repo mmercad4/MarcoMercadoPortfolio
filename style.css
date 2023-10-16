@@ -23,6 +23,9 @@ body {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  left: 0;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
@@ -114,6 +117,10 @@ nav {
   border: solid 3px black;
 }
 
+.experience {
+  margin-top: 20rem;
+}
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 16px;
@@ -180,13 +187,17 @@ nav {
   .intro {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
   }
 
   .intro__heading {
+    margin-top: 0rem;
     font-size: 1.5rem;
   }
 
   .intro__description {
+    line-height: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 15%;
   }
 
@@ -200,5 +211,9 @@ nav {
   .intro__button-download {
     font-size: 0.7rem;
     font-weight: bold;
+  }
+
+  .experience {
+    margin-top: 10rem;
   }
 }
