@@ -176,7 +176,8 @@ nav {
   margin-bottom: 10%;
 }
 
-.experience__heading {
+.experience__heading,
+.projects__heading {
   font-size: 3rem;
   margin-bottom: 10%;
 }
@@ -200,7 +201,8 @@ nav {
   margin-bottom: 5rem;
 }
 
-.experience__skills {
+.experience__skills,
+.projects__skills {
   margin-bottom: 2rem;
 }
 
@@ -214,7 +216,18 @@ nav {
   margin-bottom: 3rem;
 }
 
-.experience__skill-card {
+.projects__skills-card-container {
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.experience__skill-card,
+.projects__skill-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5%;
@@ -223,14 +236,70 @@ nav {
   cursor: default;
 }
 
-.experience__skill-card:hover {
+.experience__skill-card:hover,
+.projects__skill-card:hover {
   border: 3px solid #28587b;
   background-color: white;
   color: black;
 }
 
-.experience__skill {
+.experience__skill,
+.projects__skill {
   text-align: center;
+}
+
+.projects {
+  margin-bottom: 10rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.projects__card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5rem;
+  margin-top: 3rem;
+}
+
+.projects__card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projects__card-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.projects__card-image {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__card-image > img {
+  width: 100%;
+}
+
+.projects__card-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.projects__card-text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -273,9 +342,6 @@ nav {
     top: 10vh;
     grid-row: 2/3;
     z-index: 100;
-  }
-
-  .nav__links {
   }
 
   .nav__links,
@@ -348,9 +414,13 @@ nav {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
+
+  .projects__card {
+    max-width: 100%;
+  }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .experience {
     margin-top: 30rem;
     margin-bottom: 10rem;
@@ -369,9 +439,5 @@ nav {
   .intro__button-download {
     font-size: 1.2rem;
     padding: 10px 20px;
-  }
-
-  .experience__skills-card-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
