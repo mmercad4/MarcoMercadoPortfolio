@@ -124,9 +124,15 @@ nav {
   margin-right: 10%;
 }
 
+.experience__card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
 .experience__info {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 10%;
 }
@@ -145,8 +151,33 @@ nav {
 .experience__date,
 .experience__name,
 .experience__title {
-  font-weight: 300;
+  font-weight: bold;
   margin: 0;
+}
+
+.experience__description {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.experience__skills-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 4rem;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience__skill-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5%;
+}
+
+.experience__skill {
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -219,7 +250,7 @@ nav {
   }
 
   .intro__heading {
-    margin-top: 0rem;
+    margin-top: 1rem;
     font-size: 3rem;
   }
 
