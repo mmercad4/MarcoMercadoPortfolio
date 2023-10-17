@@ -106,14 +106,16 @@ nav {
   margin-bottom: 15%;
 }
 
-.intro__buttons {
+.intro__buttons,
+.project__button-repo {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .intro__button-email,
-.intro__button-download {
+.intro__button-download,
+.project__button-repo {
   font-size: 1rem;
   font-weight: bold;
   margin: auto;
@@ -140,18 +142,21 @@ nav {
   border: 2px solid black;
 }
 
-.intro__button-download {
+.intro__button-download,
+.project__button-repo {
   color: black;
   border: solid 3px black;
   transition: 0.3s;
 }
 
-.intro__button-download:hover {
+.intro__button-download:hover,
+.project__button-repo:hover {
   border: solid 5px black;
   transform: translateY(-0.5rem);
 }
 
-.intro__button-download:active {
+.intro__button-download:active,
+.project__button-repo:active {
   border: solid 1px black;
   background-color: white;
 }
@@ -177,7 +182,8 @@ nav {
 }
 
 .experience__heading,
-.projects__heading {
+.projects__heading,
+.currentProject__heading {
   font-size: 3rem;
   margin-bottom: 10%;
 }
@@ -216,7 +222,8 @@ nav {
   margin-bottom: 3rem;
 }
 
-.projects__skills-card-container {
+.projects__skills-card-container,
+.currentProject__card-container {
   font-size: 0.8rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -248,7 +255,8 @@ nav {
   text-align: center;
 }
 
-.projects {
+.projects,
+.currentProject {
   margin-bottom: 10rem;
   margin-left: 10%;
   margin-right: 10%;
@@ -286,6 +294,7 @@ nav {
 
 .projects__card-image > img {
   width: 100%;
+  height: auto;
 }
 
 .projects__card-title {
@@ -301,6 +310,27 @@ nav {
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
+
+.projects__skill-card {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.project__button-repo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+}
+
+.project__button-repo > img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+
+
+
 
 @media screen and (max-width: 768px) {
   body {
@@ -389,7 +419,8 @@ nav {
   }
 
   .intro__button-email,
-  .intro__button-download {
+  .intro__button-download,
+  .project__button-repo {
     font-size: 0.7rem;
     font-weight: bold;
   }
