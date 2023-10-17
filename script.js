@@ -1,5 +1,6 @@
 const hamburger = document.getElementById("hamburger");
 const navButtonsLinks = document.querySelectorAll(".link");
+const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 const displayNav = () => {
   const navLinks = document.querySelector(".nav__links");
@@ -19,6 +20,8 @@ const displayNav = () => {
 };
 
 const closeNav = () => {
+  if (!mediaQuery.matches) return;
+
   const navLinks = document.querySelector(".nav__links");
   const navHyperLinks = document.querySelector(".nav__hyperlinks");
   const imageContainer = document.querySelector(".nav__image-container");
@@ -38,5 +41,7 @@ const closeNav = () => {
 navButtonsLinks.forEach((button) => {
   button.addEventListener("click", closeNav);
 });
+
+console.log(mediaQuery.matches);
 
 hamburger.addEventListener("click", displayNav);
