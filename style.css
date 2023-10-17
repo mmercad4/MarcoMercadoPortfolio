@@ -161,6 +161,10 @@ nav {
   margin-bottom: 5rem;
 }
 
+.experience__skills {
+  margin-bottom: 2rem;
+}
+
 .experience__skills-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -168,6 +172,7 @@ nav {
   row-gap: 2rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .experience__skill-card {
@@ -279,12 +284,22 @@ nav {
     margin-right: 10%;
   }
 
+  .experience__card-container {
+    gap: 5rem;
+  }
+
   .experience__heading {
     font-size: 2rem;
   }
+
+  .experience__description {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .experience {
     margin-top: 30rem;
     margin-bottom: 10rem;
@@ -303,5 +318,9 @@ nav {
   .intro__button-download {
     font-size: 1.2rem;
     padding: 10px 20px;
+  }
+
+  .experience__skills-card-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
