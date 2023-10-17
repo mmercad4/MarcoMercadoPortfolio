@@ -164,7 +164,6 @@ nav {
     justify-content: space-around;
     grid-row: 1/2;
     background-color: white;
-    margin-right: 10%;
   }
 
   .nav {
@@ -216,7 +215,7 @@ nav {
   .intro {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .intro__heading {
@@ -226,7 +225,7 @@ nav {
 
   .intro__description {
     line-height: 1.8rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 15%;
   }
 
