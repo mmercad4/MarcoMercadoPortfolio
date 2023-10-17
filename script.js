@@ -6,8 +6,7 @@ const displayNav = () => {
   const nameContainer = document.querySelector(".nav__name");
   const nav = document.querySelector(".nav");
 
-  navLinks.style.display =
-    navLinks.style.display === "block" ? "none" : "block";
+  navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
   navHyperLinks.style.display =
     navHyperLinks.style.display === "block" ? "none" : "block";
   imageContainer.style.display =

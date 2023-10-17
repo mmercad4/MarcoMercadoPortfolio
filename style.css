@@ -275,6 +275,9 @@ nav {
     z-index: 100;
   }
 
+  .nav__links {
+  }
+
   .nav__links,
   .nav__hyperlinks,
   .nav__image-container,
