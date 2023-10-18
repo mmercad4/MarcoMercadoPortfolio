@@ -185,7 +185,8 @@ nav {
 
 .experience__heading,
 .projects__heading,
-.currentProject__heading {
+.currentProject__heading,
+.aboutMe__heading {
   font-size: 3rem;
   margin-bottom: 10%;
 }
@@ -194,6 +195,7 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 5%;
+  border-radius: 3%;
 }
 
 .experience__date,
@@ -258,7 +260,8 @@ nav {
 }
 
 .projects,
-.currentProject {
+.currentProject,
+.aboutMe {
   margin-bottom: 10rem;
   margin-left: 10%;
   margin-right: 10%;
@@ -278,6 +281,7 @@ nav {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-radius: 2%;
 }
 
 .projects__card-content {
@@ -338,6 +342,22 @@ nav {
 .project__button-repo > img {
   max-width: 25px;
   max-height: 25px;
+}
+
+.aboutMe {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3%;
+  padding: 0.5rem;
+}
+
+.aboutMe__heading-whoAmI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMe__whoAmI-description {
+  margin: 3%;
 }
 
 @media screen and (max-width: 768px) {
