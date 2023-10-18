@@ -173,7 +173,8 @@ nav {
 .experience__card-container {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 5rem;
+  margin-bottom: 0px;
 }
 
 .experience__info {
@@ -189,6 +190,7 @@ nav {
 .aboutMe__heading {
   font-size: 3rem;
   margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 .experience__card {
@@ -225,6 +227,11 @@ nav {
   align-items: center;
   margin-bottom: 3rem;
 }
+
+.education__heading {
+  margin: 0px;
+}
+
 
 .projects__skills-card-container,
 .currentProject__card-container {
